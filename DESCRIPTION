@@ -1,0 +1,15 @@
+Package: coordinationSimulationModel
+Title: Simulation model for comparing coordination forms
+Type: Package
+Version: 0.1.0
+Author: Michael Zaggl
+Maintainer: Michael Zaggl <michael.zaggl@neoma-bs.fr>
+Description: Contains the functions of aimulation model for comparing coordination forms in building a design structure matrix, aiming to identify effects caused by these mechanisms.
+Imports:
+   expm,
+   beepr
+License: MIT License
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-09-04 10:36:42 UTC; michael.zaggl
