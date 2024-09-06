@@ -410,7 +410,7 @@ run <- function(authority,ticks,composability,m=1,f=1.00,turbulence=0,release=1,
 
   print(paste( "Run executed- complete:",sum(!is.na(techno.struct))/(size^2)," Direct coup:",round(directCouplingCost,2)," Indirct coup:",round(propagationCost,2)," Impl:",i," ticksTurned80perc:",ticks.whenturned80perc," compl.cum",round(complete.cum,2),"effica.cum",round(efficacy.cum,2),"auth:",authority,"compo:",composability,"m:",m,"f:",f,"size:",size,"t:",turbulence,"release:",release,"i:",i))
   result <- c(sum(techno.effica,na.rm=TRUE)/(size^2),sum(!is.na(techno.struct))/(size^2),directCouplingCost,propagationCost,ticks.whenturned80perc,efficacy.cum,complete.cum,directCouplCost.at50perc,propagationCost.at50perc,authority,composability,m,f,size,ticks,turbulence,release,i)
-  result <- c(result,stringLengths,max(numberOfTasksPulled))
+  result <- c(result,stringLengths)
   names(result) <- c("effica","completeness","directCouplingCost","propagationCost","ticksTurned80perc","effica.cum","complete.cum","directCouplCost.at50perc","propagationCost.at50perc","authority","compo","m","f","size","ticks","turbulence","release","i","ic1st","ic2nd","ic3rd","ic4th","ic5th","ic6th","ic7th","ic8th","ic9th","ic10th","ic11th","ic12th","ic13th","ic14th","ic15th","ic16th","ic17th","ic18th","ic19th","ic20th")
   return(list(result,techno.struct))
 }
